@@ -1,0 +1,11 @@
+pandas
+numpy
+scikit-learn
+matplotlib
+statsmodels
+fancyimpute
+shap
+seaborn
+flask
+flask-cors
+streamlit
