@@ -9,3 +9,4 @@ seaborn
 flask
 flask-cors
 streamlit
+requests
