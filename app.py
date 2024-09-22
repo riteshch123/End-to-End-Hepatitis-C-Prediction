@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 import os
 
-flask_backend_url = os.getenv('FLASK_BACKEND_URL')
+FLASK_BACKEND_URL = flask_backend_url = os.getenv('flask_backend_url')
 
 st.title('Hepatitis C Prediction')
 
@@ -41,7 +41,7 @@ if st.button('Predict'):
 
     # Send data to the Flask API
     try:
-        response = requests.post(f"{flask_backend_url}/predict", json=data)
+        response = requests.post(f"{FLASK_BACKEND_URL}/predict", json=data)
         response.raise_for_status()  # Raises HTTPError for bad responses (4xx or 5xx)
         prediction = response.json()
 
