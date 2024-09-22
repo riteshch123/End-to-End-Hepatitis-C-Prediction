@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 import os
 
-FLASK_BACKEND_URL = flask_backend_url = os.getenv('flask_backend_url')
+FLASK_BACKEND_URL = os.getenv('flask_backend_url')
 
 st.title('Hepatitis C Prediction')
 
